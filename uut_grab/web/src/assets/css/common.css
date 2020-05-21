@@ -1,0 +1,11 @@
+.mint-msgbox-confirm{
+    font-size: 16px;
+}
+.mint-popup-bottom{
+    width: 101%;
+}
+.mint-msgbox{
+    min-width: 280px;
+    max-width: 85%;
+    width: auto;
+}

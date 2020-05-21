@@ -1,0 +1,67 @@
+#app .el-menu .is-opened .el-submenu__title, 
+#app .el-menu .is-opened li, 
+#app .el-menu .is-opened ul{
+    background-color: #151b21 !important;
+}
+#app .el-menu .is-opened .el-submenu__title i{
+    color: #dadada;
+}
+#app .el-menu .el-menu-item-group__title{
+    display: none;
+}
+#app .el-menu{
+    border-right: 0;
+    /* background-color: #1b2329; */
+    /* background-color: none; */
+}
+#app .el-menu .is-opened .el-menu-item:hover, #app .el-menu .is-opened .el-submenu__title{
+    background-color: rgb(18, 22, 25) !important;
+}
+.el-dialog .el-input, .el-dialog .el-textarea{
+    width: 300px;
+}
+.el-dialog .el-form-item__label{
+    font-weight: 600;
+}
+
+/* 上传文件 */
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+#app .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+}
+.avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+}
+
+/* 公共样式 */
+.demo-form-inline{
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 20px 15px 6px;
+    /* box-shadow: 0 0 5px #000; */
+}
+.demo-form-inline .el-form-item{
+    margin-bottom: 15px;
+}
+.mypage{
+    background: #fff;
+    padding: 15px 10px;
+    margin-top: 15px;
+    /* text-align: right; */
+}
