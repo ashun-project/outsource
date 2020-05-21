@@ -16,19 +16,23 @@ router.post('/admin/userList', function (req, res, next) {
     // console.log(sql)
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL userList==> " + err);
-        conn.query(sql, function (errr,result) {
-            result = result || []
-            conn.query(countSql, function (errr,count) {
-                var total = 0;
-                if (count && count[0]) total = count[0]['count(1)']
-                res.json({message: '查询成功', code: 0, list: result, total: total });
+        conn.query(sql, function (errList,result) {
+            if (errList) {
+                res.json({message: '查询失败', code: 1 });
                 conn.release();
-            })
+            } else {
+                conn.query(countSql, function (errr,count) {
+                    var total = 0;
+                    if (count && count[0]) total = count[0]['count(1)']
+                    res.json({message: '查询成功', code: 0, list: result, total: total });
+                    conn.release();
+                })
+            }
         })
     })
 });
 router.post('/admin/allUserList', function (req, res, next) {
-    var sql = "SELECT * FROM user where parent_top != '888888' order by create_date desc";
+    var sql = "SELECT * FROM user where parent_top != '999999' order by create_date desc";
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL userList==> " + err);
         conn.query(sql, function (errr,result) {
@@ -103,14 +107,18 @@ router.post('/admin/userBankList', function (req, res, next) {
     // console.log(sql)
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL userList==> " + err);
-        conn.query(sql, function (errr,result) {
-            result = result || []
-            conn.query(countSql, function (errr,count) {
-                var total = 0;
-                if (count && count[0]) total = count[0]['count(1)']
-                res.json({message: '查询成功', code: 0, list: result, total: total });
+        conn.query(sql, function (errList,result) {
+            if (errList) {
+                res.json({message: '查询失败', code: 1 });
                 conn.release();
-            })
+            } else {
+                conn.query(countSql, function (errr,count) {
+                    var total = 0;
+                    if (count && count[0]) total = count[0]['count(1)']
+                    res.json({message: '查询成功', code: 0, list: result, total: total });
+                    conn.release();
+                })
+            }
         })
     })
 });
@@ -138,14 +146,18 @@ router.post('/admin/userAddresssList', function (req, res, next) {
     // console.log(sql)
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL userAddresssList==> " + err);
-        conn.query(sql, function (errr,result) {
-            result = result || []
-            conn.query(countSql, function (errr,count) {
-                var total = 0;
-                if (count && count[0]) total = count[0]['count(1)']
-                res.json({message: '查询成功', code: 0, list: result, total: total });
+        conn.query(sql, function (errList,result) {
+            if (errList) {
+                res.json({message: '查询失败', code: 1 });
                 conn.release();
-            })
+            } else {
+                conn.query(countSql, function (errr,count) {
+                    var total = 0;
+                    if (count && count[0]) total = count[0]['count(1)']
+                    res.json({message: '查询成功', code: 0, list: result, total: total });
+                    conn.release();
+                })
+            }
         })
     })
 });
@@ -172,6 +184,11 @@ router.post('/admin/addUser', function (req, res, next) {
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL addUser==> " + err);
         conn.query(sqlVP, function (errP,vpResult) {
+            if (errP) {
+                res.json({message: '查询数据失败', code: 1});
+                conn.release();
+                return
+            }
             var dbs = vpResult || [];
             var rpPhone = dbs.filter(item => item.phone === obj.phone)[0];
             var parent = dbs.filter(item => item.invite === obj.invite)[0];
@@ -199,6 +216,9 @@ router.post('/admin/addUser', function (req, res, next) {
                         }
                         conn.release();
                     });
+                }).catch(function () {
+                    res.json({message: '数据插入失败', code: 1});
+                    conn.release();
                 })
             }
         })

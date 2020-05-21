@@ -26,6 +26,8 @@ module.exports = {
                     conn.query(checkIn, function (err, chResult) {
                         if (err) {
                             console.log(err, '创建邀请码失败')
+                            conn.release();
+                            reject();
                         }
                         if (chResult && !chResult.length) {
                             resolve(result);

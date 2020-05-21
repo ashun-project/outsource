@@ -66,11 +66,20 @@ router.post('/grab/updateAddress', function (req, res, next) {
     var sqlSelect = "SELECT * FROM address where user_id = "+ obj.userId +" and status = 2";
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL updateAddress==> " + err);
-        conn.query(sqlSelect, function (err, result) {
+        conn.query(sqlSelect, function (errr, result) {
+            if (errr) {
+                res.json({message: '查询数据出错', code: 1 });
+                conn.release();
+                return
+            }
             if (result && result[0]) {
-                result.id
                 var editSql = "update address set status = 1 where id = "+ result[0].id;
-                conn.query(editSql, function (err, result) {
+                conn.query(editSql, function (errU, result) {
+                    if (errU) {
+                        res.json({message: '查询数据出错', code: 1 });
+                        conn.release();
+                        return
+                    }
                     conn.query(sql, function (err, result) {
                         res.json({message: '设置成功', code: 0 });
                         conn.release();
@@ -197,6 +206,7 @@ router.post('/grab/grabOrder', function (req, res, next) {
                     var userAmount = (user[0].amount || 0) - frozenAmount;
                     if (userAmount < obj.minMmount) {
                         res.json({message: '余额不足请充值', code: 1});
+                        conn.release();
                         return
                     }
                     var maxProfit = minMmount / 100 * 70;//userAmount / 100 * 5 / 30;
@@ -206,6 +216,7 @@ router.post('/grab/grabOrder', function (req, res, next) {
                     });
                     if (!availStore.length) {
                         res.json({message: '没有匹配到订单', code: 1});
+                        conn.release();
                         return
                     }
                     var num = Math.floor(Math.random() * availStore.length + 1);
@@ -256,13 +267,18 @@ router.post('/grab/grabOrder', function (req, res, next) {
 
 
 // 查询当前订单列表
-router.post('/grab/currentOrder', function (req, res, next) {
+router.post('/grab/currentOrder', function (req, res) {
     var sql = "select * FROM order_list where user_id = "+ req.body.userId +" and status = 1 and end_time > DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s')";
     // var sql = "select * FROM order_list where user_id = "+ req.body.userId +" and status = 1";
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL currentOrder==> " + err);
-        conn.query(sql, function (err, result) {
+        conn.query(sql, function (errr, result) {
             // 判断订单记录页面时会调用
+            if (errr) {
+                res.json({message: '查询数据出错', code: 1 });
+                conn.release();
+                return
+            }
             if (req.body.page && req.body.status === 0) {
                 getOrderNotes(res, conn, result);
             } else {
@@ -285,6 +301,11 @@ router.post('/grab/orderList', function (req, res, next) {
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL orderList==> " + err);
         conn.query(sql, function (err, result) {
+            if (errr) {
+                res.json({message: '查询数据出错', code: 1 });
+                conn.release();
+                return
+            }
             getOrderNotes(res, conn, result);
         })
     })
@@ -324,7 +345,12 @@ router.post('/grab/submitOrder', function (req, res, next) {
     }
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL submitOrder==> " + err);
-        conn.query(sqlSelect, function (err, row) {
+        conn.query(sqlSelect, function (errr, row) {
+            if (errr) {
+                res.json({message: '查询数据出错', code: 1 });
+                conn.release();
+                return
+            }
             if (row && row[0]) {
                 // 防止黑客
                 if (row[0].status !== 1) {

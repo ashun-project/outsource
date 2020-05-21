@@ -5,7 +5,6 @@ var db = require('../conf/db');
 // var common = require('../conf/common');
 var poolUser = mysql.createPool(db.mysql);
 var encryption = require('../conf/md5');
-// var request = require('request');
 
 // 公司银行卡信息
 router.post('/grab/banks', function (req, res, next) {
@@ -60,25 +59,6 @@ router.post('/grab/recharge', function (req, res, next) {
         });
     })
 });
-
-// 订单审核
-function examine(obj) {
-    var sql = "update user set amount = amount + "+ obj.amount +" where id = "+ obj.id;
-    var sqlRe = "update recharge set status = 2 where user_id = "+ obj.id;
-    poolUser.getConnection(function (err, conn) {
-        if (err) console.log("POOL examine==> " + err);
-        conn.query(sql, function (err, result) {
-            // res.json({message: '更改成功', code: 0 });
-            if (!err) {
-                conn.query(sqlRe, function (err, result) {
-                    conn.release();
-                })
-            } else {
-                conn.release();
-            } 
-        })
-    })
-}
 
 // 充值列表
 router.post('/grab/rechargeList', function (req, res, next) {
@@ -139,7 +119,7 @@ router.post('/grab/bindBank', function (req, res, next) {
 
 
 // 提现
-router.post('/grab/withdraw', function (req, res, next) {
+router.post('/grab/withdraw', function (req, res) {
     var obj = req.body;
     var sqlInfo = "INSERT INTO withdraw(amount,user_id,create_date,order_no,status,withdraw_type,bank_no,bank_name,bank_dot,payee,parent_top) VALUES ?";
     var sql = "SELECT * FROM user where id = "+ obj.userId;
@@ -181,13 +161,13 @@ router.post('/grab/withdraw', function (req, res, next) {
                 return
             }
             conn.query(sqlWithdraw, function (withdrErr, withdrawList) {
-                if (countErr) {
+                if (withdrErr) {
                     res.json({message: '系统出错', code: 1});
                     conn.release();
                     return
                 }
                 conn.query(sql, function (errr, row) {
-                    if (err) {
+                    if (errr) {
                         res.json({message: '系统出错', code: 1});
                         conn.release();
                         return
@@ -224,25 +204,6 @@ router.post('/grab/withdraw', function (req, res, next) {
         })
     })
 });
-
-// 订单审核
-function examineWithdraw(obj) {
-    var sql = "update user set amount = amount - "+ obj.amount +" where id = "+ obj.userId;
-    var sqlRe = "update withdraw set status = 2 where user_id = "+ obj.userId;
-    poolUser.getConnection(function (err, conn) {
-        if (err) console.log("POOL examine==> " + err);
-        conn.query(sql, function (err, result) {
-            // res.json({message: '更改成功', code: 0 });
-            if (!err) {
-                conn.query(sqlRe, function (err, result) {
-                    conn.release();
-                })
-            } else {
-                conn.release();
-            } 
-        })
-    })
-}
 
 // 提现列表
 router.post('/grab/withdrawList', function (req, res, next) {

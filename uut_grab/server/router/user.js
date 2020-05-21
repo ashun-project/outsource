@@ -117,10 +117,15 @@ router.post('/grab/register', function (req, res, next) {
                             }
                             conn.release();
                         });
+                    }).catch(function () {
+                        res.json({message: '数据插入失败', code: 1});
+                        conn.release();
                     })
                 }
             })
         })
+    }).catch(function () {
+        res.json({message: '添加失败', code: 0 });
     })
 });
 
@@ -154,6 +159,8 @@ router.post('/grab/retrieve', function (req, res) {
                 conn.release();
             })
         })
+    }).catch(function () {
+        res.json({message: '修改失败', code: 0 });
     })
 });
 
@@ -190,7 +197,7 @@ router.post('/grab/verifyCode', function (req, res, next) {
             poolUser.getConnection(function (err, conn) {
                 conn.query(sqlInfo, [infoData], function (err, result) {
                     if (err) {
-                        res.json({message: '插入验证码失败', code: 2});
+                        res.json({message: '插入验证码失败', code: 1});
                     } else {
                         res.json({message: '发送成功', code: 0});
                     }
@@ -198,7 +205,7 @@ router.post('/grab/verifyCode', function (req, res, next) {
                 })
             })
         } else {
-            res.json({message: obj[response.body + ''], code: 2});
+            res.json({message: obj[response.body + ''], code: 1});
         }
     })
 })
@@ -234,7 +241,12 @@ router.post('/grab/updatePhone', function (req, res, next) {
         }
         poolUser.getConnection(function (err, conn) {
             if (err) console.log("POOL updatePhone==> " + err);
-            conn.query(sqlP, function (err, row) {
+            conn.query(sqlP, function (errr, row) {
+                if (errr) {
+                    res.json({message: '查询数据出错', code: 1});
+                    conn.release();
+                    return
+                }
                 var total = row[0]['count(1)'];
                 if (total > 0) {
                     res.json({message: '手机号码已存在', code: 1});
@@ -247,6 +259,8 @@ router.post('/grab/updatePhone', function (req, res, next) {
                 }
             })
         })
+    }).catch(function () {
+        res.json({message: '更改失败', code: 0 });
     })
 });
 
@@ -289,12 +303,21 @@ function getVerifyCode(phone) {
     var sqlVnvite = "SELECT * FROM verify_code WHERE phone = '" + phone +"' order by timer desc";
     return new Promise(function (resolve, reject){ 
         poolUser.getConnection(function (err, conn) {
-            conn.query(sqlVnvite, function (err, result) {
+            if (err) {
+                reject()
+                return
+            }
+            conn.query(sqlVnvite, function (errr, result) {
+                if (errr) {
+                    conn.release();
+                    reject()
+                    return
+                }
                 var reObj = result[0] || {}
                 var timer = new Date().getTime();
                 reObj.timer = timer - reObj.timer;
-                resolve(reObj)
                 conn.release();
+                resolve(reObj)
             })
         })
     })

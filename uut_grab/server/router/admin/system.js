@@ -15,14 +15,18 @@ router.post('/admin/bannerList', function (req, res, next) {
     // console.log(sql)
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL bannerList==> " + err);
-        conn.query(sql, function (errr,result) {
-            result = result || []
-            conn.query(countSql, function (errr,count) {
-                var total = 0;
-                if (count && count[0]) total = count[0]['count(1)']
-                res.json({message: '查询成功', code: 0, list: result, total: total });
+        conn.query(sql, function (errList,result) {
+            if (errList) {
+                res.json({message: '查询失败', code: 1 });
                 conn.release();
-            })
+            } else {
+                conn.query(countSql, function (errr,count) {
+                    var total = 0;
+                    if (count && count[0]) total = count[0]['count(1)']
+                    res.json({message: '查询成功', code: 0, list: result, total: total });
+                    conn.release();
+                })
+            }
         })
     })
 });
@@ -76,14 +80,18 @@ router.post('/admin/noticeList', function (req, res, next) {
     // console.log(sql)
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL noticeList==> " + err);
-        conn.query(sql, function (errr,result) {
-            result = result || []
-            conn.query(countSql, function (errr,count) {
-                var total = 0;
-                if (count && count[0]) total = count[0]['count(1)']
-                res.json({message: '查询成功', code: 0, list: result, total: total });
+        conn.query(sql, function (errList,result) {
+            if (errList) {
+                res.json({message: '查询失败', code: 1 });
                 conn.release();
-            })
+            } else {
+                conn.query(countSql, function (errr,count) {
+                    var total = 0;
+                    if (count && count[0]) total = count[0]['count(1)']
+                    res.json({message: '查询成功', code: 0, list: result, total: total });
+                    conn.release();
+                })
+            }
         })
     })
 });
