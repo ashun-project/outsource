@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <title>点我达抢单宝</title>
+    <!-- <script src="/static/ckplayer/ckplayer.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+        if(window.plus){
+            myPlusReady();
+        }else{
+            document.addEventListener('plusready', myPlusReady, false);
+        }
+
+        var firstCilck = null;
+        function myPlusReady() {
+            var webview = plus.webview.currentWebview();
+            plus.key.addEventListener('backbutton', function () {
+                var hash = document.location.hash;
+                webview.canBack(function (e) {
+                    if (e.canBack && hash !== "#/home") {
+                        webview.back();
+                    } else {
+                        if (!firstCilck) {
+                            firstCilck = new Date().getTime();
+                            setTimeout(function () {
+                                firstCilck = null;
+                            }, 1000);
+                        } else {
+                            if (new Date().getTime() - firstCilck < 1500) {
+                                plus.runtime.quit();
+                            }
+                        }
+                    }
+                })
+            });
+        }
+    </script>
+  </body>
+</html>

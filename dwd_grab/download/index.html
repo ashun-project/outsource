@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>点我达抢单宝下载单页</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<link href="images/ico.ico" rel="shortcut icon">
+<meta name="viewport" content="width=640,maximum-scale=4,user-scalable=no">
+<link rel="stylesheet" rev="stylesheet" href="style/reset.css" type="text/css" />
+<link rel="stylesheet" rev="stylesheet" href="style/global.css" type="text/css" />
+<!-- <link rel="stylesheet" rev="stylesheet" href="style/index.css" type="text/css" /> -->
+ 
+
+</head>
+<body>
+ <div class="logo"><h1><a href="#" class="logo-img" ><img src="images/logo.png" alt="" /></a></h1></div>
+ <div class="zt"><img src="images/zt.png" alt="" /></div>
+ <div class="xia">
+	<div class="phone"><img src="images/phone.png" alt="" /></div>
+	<div class="down">
+		<div class="ma">
+			<div class="saoma" id="qrcode">
+
+			</div>
+			<div class="sw">扫描二维码下载</div>
+		</div>
+		<div class="dw"><a href="https://testflight.apple.com/join/jPRTqFMT" class="" ><img src="images/dw1.png" alt="" /></a></div>
+		<div class="dw"><a href="https://youfenfa.com/z/uuqdb" class="" ><img src="images/dw2.png" alt="" /></a></div>
+	</div>
+	
+ </div>
+ <div class="cop">点我达抢单宝版权所有</div>
+</body>
+<script type="text/javascript" src="./script/jquery.min.js"></script>
+<script type="text/javascript" src="./script/qrcode.min.js"></script>
+<script>
+	var href = window.location.href;
+	var qrcode = new QRCode("qrcode", {
+		text: href,
+		width: 220,
+		height: 220,
+		colorDark : "#000000",
+		colorLight : "#ffffff",
+		correctLevel : QRCode.CorrectLevel.H
+	});
+</script>
+</html>

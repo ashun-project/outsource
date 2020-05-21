@@ -1,0 +1,75 @@
+﻿a{text-decoration:none;}
+body{
+	max-width: 640px;
+	margin:0 auto;
+	min-height:100vh;
+	position:relative;
+	background: url(../images/bg.png) no-repeat center top;
+	background-size: cover;
+}
+.logo{
+	text-align:center;
+	padding-top:40px;
+}
+.logo-img img{
+	width: 30%;
+}
+.zt{
+	text-align:center;
+	padding:14px 0px;
+}
+.xia{
+	padding:30px 20px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.ma{
+	width:240px;
+	height:280px;
+	background:#fff;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+.saoma{
+	height:240px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.sw{
+	text-align:center;
+	line-height:40px;
+	font-size:24px;
+}
+.dw{
+	padding-bottom:16px;
+}
+.cop{
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+	line-height:50px;
+	bottom:0px;
+	position:absolute;
+	width:100%;
+	padding-bottom:15px;
+}
