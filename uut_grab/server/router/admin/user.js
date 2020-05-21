@@ -32,7 +32,7 @@ router.post('/admin/userList', function (req, res, next) {
     })
 });
 router.post('/admin/allUserList', function (req, res, next) {
-    var sql = "SELECT * FROM user where parent_top != '999999' order by create_date desc";
+    var sql = "SELECT * FROM user where parent_top != '888888' order by create_date desc";
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL userList==> " + err);
         conn.query(sql, function (errr,result) {

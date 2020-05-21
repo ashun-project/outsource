@@ -212,7 +212,7 @@ router.post('/grab/grabOrder', function (req, res, next) {
                     var maxProfit = minMmount / 100 * 70;//userAmount / 100 * 5 / 30;
                     var minProfit = minMmount / 100 * 10;//userAmount / 100 * 3.5 / 30;
                     var availStore = store.filter(item => {
-                        return item.price <= maxProfit && item.price >= minProfit
+                        return item.price >= minProfit
                     });
                     if (!availStore.length) {
                         res.json({message: '没有匹配到订单', code: 1});
@@ -224,11 +224,16 @@ router.post('/grab/grabOrder', function (req, res, next) {
                     // 有可能会高 4.5
                     // var maxItem = (maxProfit / selected.price < 1) ? 1 : maxProfit / selected.price;
                     var maxItem = (userAmount / 100 * 4.5 / 30) / (selected.price / 100 * obj.profit);
-                    var item = Math.floor(Math.random() * maxItem + 1);
-                    if (item * selected.price > maxProfit || item < 1) {
-                        item = 1
+                    var minItem = (userAmount / 100 * 3.5 / 30) / (selected.price / 100 * obj.profit);
+                    if (maxItem < 1) maxItem = 1;
+                    if (minItem > maxItem) minItem = maxItem;
+                    if (minItem < 1) minItem = 1;
+                    function rd(n,m){  
+                        var c = m-n+1;    
+                        return Math.floor(Math.random() * c + n);  
                     }
-                    console.log(selected.price, obj.profit, maxItem)
+                    var item = rd(minItem, maxItem);
+                    console.log(selected.price, obj.profit, minItem, maxItem)
 
                     var sqlInfo = "INSERT INTO order_list(create_date,end_time,order_no,earn,user_id,goods_id,item,price,user_level,phone,parent_top) VALUES ?";
                     var orderNo = '';
@@ -300,7 +305,7 @@ router.post('/grab/orderList', function (req, res, next) {
     var sql = "select * FROM order_list where status = "+ obj.status + filterId + filterDate +" order by create_date desc limit " + (limitNum + "," + pageSize);
     poolUser.getConnection(function (err, conn) {
         if (err) console.log("POOL orderList==> " + err);
-        conn.query(sql, function (err, result) {
+        conn.query(sql, function (errr, result) {
             if (errr) {
                 res.json({message: '查询数据出错', code: 1 });
                 conn.release();
