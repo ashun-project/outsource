@@ -19,6 +19,7 @@
         var firstCilck = null;
         function myPlusReady() {
             var webview = plus.webview.currentWebview();
+            plus.navigator.closeSplashscreen()
             plus.key.addEventListener('backbutton', function () {
                 var hash = document.location.hash;
                 webview.canBack(function (e) {

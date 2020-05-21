@@ -212,7 +212,7 @@ router.post('/grab/grabOrder', function (req, res, next) {
                     var maxProfit = minMmount / 100 * 70;//userAmount / 100 * 5 / 30;
                     var minProfit = minMmount / 100 * 10;//userAmount / 100 * 3.5 / 30;
                     var availStore = store.filter(item => {
-                        return item.price >= minProfit
+                        return item.price <= maxProfit && item.price >= minProfit
                     });
                     if (!availStore.length) {
                         res.json({message: '没有匹配到订单', code: 1});
@@ -233,7 +233,7 @@ router.post('/grab/grabOrder', function (req, res, next) {
                         return Math.floor(Math.random() * c + n);  
                     }
                     var item = rd(minItem, maxItem);
-                    console.log(selected.price, obj.profit, minItem, maxItem)
+                    // console.log(selected.price, obj.profit, minItem, maxItem)
 
                     var sqlInfo = "INSERT INTO order_list(create_date,end_time,order_no,earn,user_id,goods_id,item,price,user_level,phone,parent_top) VALUES ?";
                     var orderNo = '';

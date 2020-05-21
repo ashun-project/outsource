@@ -1,7 +1,7 @@
 <template>
     <div class="goods">
         <my-header title="在线客服" bkUrl="/service"></my-header>
-        <iframe id="iframe" src="https://vm.providesupport.com/0cdavp69tud810rg91blhnm11w" frameborder="0"></iframe>
+        <iframe id="iframe" src="https://kefu4.ziyun.com.cn/vclient/chat/?websiteid=174518&wc=c54c9c&groupid=44854" frameborder="0"></iframe>
     </div>
 </template>
 

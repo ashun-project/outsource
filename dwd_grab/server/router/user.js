@@ -171,9 +171,9 @@ router.post('/grab/verifyCode', function (req, res, next) {
         code += Math.floor(Math.random() * 10);
     }
     var phone = req.body.phone;
-    var account = 'vipliuzai';
-    var password = '0192023A7BBD73250516F069DF18B500';
-    var cont = encodeURI('【点我达】您的验证码为' + code + ', 验证码20分钟内有效。')
+    var account = '18804183683';
+    var password = '4BDB99A86CF1095C4333899EE068A8A2';
+    var cont = encodeURI('【DWD点我达】您的验证码为' + code + ', 验证码20分钟内有效。')
     var url = 'http://api.smsbao.com/sms?u='+ account +'&p='+ password +'&m='+ phone +'&c=' + cont;
 
     if (!(/^1[23456789]\d{9}$/.test(phone))) {
