@@ -204,13 +204,13 @@ router.post('/grab/grabOrder', function (req, res, next) {
                     }
                     var minMmount = obj.minMmount; // (user[0].amount || 0) - frozenAmount;
                     var userAmount = (user[0].amount || 0) - frozenAmount;
-                    if (userAmount < obj.minMmount) {
+                    if (userAmount < minMmount) {
                         res.json({message: '余额不足请充值', code: 1});
                         conn.release();
                         return
                     }
-                    var maxProfit = minMmount / 100 * 70;//userAmount / 100 * 5 / 30;
-                    var minProfit = minMmount / 100 * 10;//userAmount / 100 * 3.5 / 30;
+                    var maxProfit = userAmount / 100 * 70;//userAmount / 100 * 5 / 30;
+                    var minProfit = userAmount / 100 * 10;//userAmount / 100 * 3.5 / 30;
                     var availStore = store.filter(item => {
                         return item.price <= maxProfit && item.price >= minProfit
                     });

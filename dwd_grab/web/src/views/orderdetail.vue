@@ -100,18 +100,18 @@ export default {
                 this.$set(this, 'orderDetail', response.list[0]);
                 this.queryGoods(response.list[0].goods_id);
                 this.contTime();
+                
+                // 查询地址信息
+                this.$http.post('/grab/addressList', {userId: this.user.id}, {loading: true}).then(response => {
+                    var arr = response.list.filter(item => item.status === 2);
+                    if (arr[0]) {
+                        this.$set(this, 'addressDetail', arr[0]);
+                    }
+                }).catch(() => {})
             } else {
                 this.expireSet();
             }
         }).catch(() => {})
-        // 查询地址信息
-        this.$http.post('/grab/addressList', {userId: this.user.id}).then(response => {
-            var arr = response.list.filter(item => item.status === 2);
-            if (arr[0]) {
-                this.$set(this, 'addressDetail', arr[0]);
-            }
-        }).catch(() => {})
-        
     },
     destroyed() {
        if (this.timer) {
