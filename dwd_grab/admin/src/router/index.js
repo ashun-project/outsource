@@ -25,6 +25,7 @@ const storeList = resolve => require(['@/views/store/storeList'], resolve)
 const goodList = resolve => require(['@/views/store/goodList'], resolve)
 const bannerList = resolve => require(['@/views/system/bannerList'], resolve)
 const noticeList = resolve => require(['@/views/system/noticeList'], resolve)
+const password = resolve => require(['@/views/system/password'], resolve)
 
 
 
@@ -169,7 +170,12 @@ export default new Router({
                     meta: { title: '公告列表', parent: 'system' },
                     component: noticeList
                 },
-                
+                {
+                    path: 'password',
+                    name: 'password',
+                    meta: { title: '修改密码', parent: 'system' },
+                    component: password
+                }
             ]
         },
         {

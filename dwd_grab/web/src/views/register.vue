@@ -1,6 +1,6 @@
 <template>
     <div class="register">
-        <div class="aui-jop-chang"><img src="@/assets/img/login.png" alt=""></div>
+        <div class="aui-jop-chang"><img src="@/assets/img/login.jpg" alt=""></div>
         <div class="register-form">
             <div class="input-wrap">
                 <i class="iconfont">&#xe61b;</i>
@@ -133,11 +133,9 @@ export default {
         font-size: 0.95rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 50px 0;
     }
     .aui-jop-chang img{
-        width: 40%;
+        width: 100%;
     }
     .register-form{
         background: #fff;

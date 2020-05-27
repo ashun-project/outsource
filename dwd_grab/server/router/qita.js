@@ -56,12 +56,24 @@ router.post('/upload',mutipartMiddeware,function (req,res) {
 // 登录
 router.post('/admin/login',function (req,res) {  
     var params = req.body;
-    if (params.userName === 'dwdadmin' && params.password === 'dwd123123') {
-        req.session.loginUser = {userName: params.userName, code: 0};
-        res.json({code: 0, message: '登入成功'})
-    } else {
-        res.json({code: 1, message: '帐号密码错误'})
+    var sql = "SELECT * FROM admin_user WHERE account = 'dwdadmin'";
+    if (params.userName !== 'dwdadmin') {
+        res.json({code: 1, message: '帐号不存在'})
+        return
     }
+    poolUser.getConnection(function (err, conn) {
+        if (err) console.log("POOL login==> " + err);
+        conn.query(sql, function (errr,result) {
+            var obj = result ? result[0] : {};
+            if (obj.password !== params.password) {
+                res.json({message: '密码错误', code: 1});
+            } else {
+                req.session.loginUser = {userName: params.userName, code: 0};
+                res.json({code: 0, message: '登入成功'})
+            }
+            conn.release();
+        })
+    })
 });
 
 // 退出登录

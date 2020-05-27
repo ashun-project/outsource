@@ -81,6 +81,7 @@
                         <el-menu-item-group>
                             <el-menu-item index="/bannerList">轮播图列表</el-menu-item>
                             <el-menu-item index="/noticeList">公告列表</el-menu-item>
+                            <el-menu-item index="/password">修改密码</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
                 </el-menu>

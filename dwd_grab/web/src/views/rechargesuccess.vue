@@ -87,7 +87,7 @@ export default {
             this.$router.push("/" + val);
         },
         getBanks() {
-            this.$http.post('/grab/banks', {id: this.routeId, group_type: this.user.group_type}).then(response => {
+            this.$http.post('/grab/banks', {id: this.routeId, group_type: this.user.group_type}, {loading: true}).then(response => {
                 this.bank = response.banks[0] || {};
             }).catch(() => {})
         },

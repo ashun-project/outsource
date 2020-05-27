@@ -59,7 +59,7 @@ router.post('/admin/deleteBanner', function (req, res, next) {
         if (err) console.log("POOL deleteBanner==> " + err);
         conn.query(sql, function (errr,result) {
             // console.log(errr,'====')
-            if (err) {
+            if (errr) {
                 res.json({message: '删除失败', code: 1 });
             } else {
                 common.deleteImg('banner/' + obj.img);
@@ -123,7 +123,7 @@ router.post('/admin/updateNotice', function (req, res, next) {
         if (err) console.log("POOL updateNotice==> " + err);
         conn.query(sqlUp, function (errr,result) {
             // console.log(errr,'====')
-            if (err) {
+            if (errr) {
                 res.json({message: '修改失败', code: 1 });
             } else {
                 res.json({message: '修改成功', code: 0 });
@@ -141,7 +141,7 @@ router.post('/admin/deleteNotice', function (req, res, next) {
         if (err) console.log("POOL deleteNotice==> " + err);
         conn.query(sql, function (errr,result) {
             // console.log(errr,'====')
-            if (err) {
+            if (errr) {
                 res.json({message: '删除失败', code: 1 });
             } else {
                 res.json({message: '删除成功', code: 0 });
