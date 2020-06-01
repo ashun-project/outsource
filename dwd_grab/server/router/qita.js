@@ -15,7 +15,7 @@ router.post('/grab/noticeList', function (req, res, next) {
     var obj = req.body;
     var sql = "SELECT * FROM notice where type = "+ obj.type +" order by create_date desc";
     if (obj.type == 'all') {
-        sql = "SELECT * FROM notice where type <= 2 or user_id = "+ obj.userId +" order by create_date desc";
+        sql = "SELECT * FROM notice where type < 2 or user_id = "+ obj.userId +" order by create_date desc";
     } else if (obj.type === 3) {
         sql = "SELECT * FROM notice where type = 3 and user_id = "+ obj.userId +" order by create_date desc";
     }

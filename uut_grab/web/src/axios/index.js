@@ -55,7 +55,8 @@ axios.interceptors.response.use(
       return Promise.reject(meta.message)
     } else if (meta.code === 3301) {
       MessageBox.alert(meta.message).then(action => {
-        window.location.href = '/'
+        localStorage.setItem('user', '');
+        window.location.href = '/';
       })
     }
     return res.data

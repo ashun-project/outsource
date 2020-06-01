@@ -68,8 +68,25 @@ export default {
     created() {
         this.footNav = this.$route.meta.nav;
         this.currentUrl = this.$route.path;
+        this.getNoticeList();
     },
     methods: {
+        getNoticeList() {
+            var user = this.$store.state.user;
+            if (!user || !user.id) {
+                return;
+            }
+          	this.$http.post('/grab/noticelist', { type: 2 }, {loading: true}).then(response => {
+				this.noticeList = response.list;
+				var data = response.list;
+				if (data[0]) {
+					this.$Message({
+						title: data[0].title,
+						message: data[0].cont
+					});
+				}
+			}).catch(() => {})
+        },
         grabOrder(url) {
             if (this.$route.path === url) return;
             if (url === '/order') {

@@ -31,7 +31,7 @@
             <el-table-column label="公告类型" align="center">
                 <template slot-scope="scope">
                     <span v-if="scope.row.type === 1">系统公告</span>
-                    <!-- <span v-else-if="scope.row.type === 2">会员公告</span> -->
+                    <span v-else-if="scope.row.type === 2">弹窗公告</span>
                     <span v-else>会员站内信</span>
                 </template>
             </el-table-column>
@@ -81,7 +81,7 @@
 <script>
 var optionsStatus = [
     {label: '系统公告', value: 1},
-    // {label: '会员公告', value: 2},
+    {label: '弹窗公告', value: 2},
     {label: '会员站内信', value: 3}
 ]
 export default {
