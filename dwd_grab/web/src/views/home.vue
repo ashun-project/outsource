@@ -80,12 +80,12 @@
       </div>
     </div>
     <div class="line"></div>
-    <!-- <div class="commission-list">
+    <div class="commission-list">
 		<h5 class="title-txt">点我达抢单宝介绍</h5>
 		<div class="video-box">
             <div id="video"></div>
 		</div>
-	</div> -->
+	</div>
     <!-- 时时佣金 -->
     <div class="commission-list">
       <h5 class="title-txt">实时佣金</h5>
@@ -158,17 +158,17 @@ export default {
         banners.style.height = (300 / 750) * banners.clientWidth + "px";
 		this.startMove();
 
-        // var videoObject = {
-        //     container: '#video', //容器的ID或className
-        //     variable: 'player',//播放函数名称
-        //     flashplayer: true,
-        //     poster: '/static/m3u8/fm.png',//封面图片
-        //     video: '/static/m3u8/demo.m3u8'
-        // };
-        // var player = new ckplayer(videoObject);
-		// var playVideo = document.querySelector('.video-box');
-		// var _5ye_height = playVideo.clientWidth / 16 * 9;
-		// playVideo.style.height = _5ye_height + 'px';
+        var videoObject = {
+            container: '#video', //容器的ID或className
+            variable: 'player',//播放函数名称
+            flashplayer: true,
+            poster: '/static/m3u8/fm.png',//封面图片
+            video: '/static/m3u8/demo.m3u8'
+        };
+        var player = new ckplayer(videoObject);
+		var playVideo = document.querySelector('.video-box');
+		var _5ye_height = playVideo.clientWidth / 16 * 9;
+		playVideo.style.height = _5ye_height + 'px';
     },
     created() {
         this.$http.post('/grab/storeList', {}, {loading: true}).then(response => {
