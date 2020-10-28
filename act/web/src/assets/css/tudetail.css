@@ -1,0 +1,452 @@
+.tudetail{
+    padding-top: 133px;
+    padding-bottom: 50px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    max-width: 750px;
+    transform: translateX(-50%);
+}
+.year {
+    width: 100%;
+    max-width: 750px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    /* position: fixed;
+    top: 50px;
+    z-index: 10; */
+}
+.year ul li.active {
+    color: #fff;
+    background: #0084ff;
+}
+.year ul li {
+    width: 20%;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 32px;
+    background: #f5f5f5;
+}
+.swiper-wrap{
+    height: 41px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-wrap .s-more{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 30px;
+    padding: 11px 7px 0;
+    height: 96%;
+}
+.swiper-wrap .s-more:active{
+    background: #f1f1f1;
+}
+.my-swiper{
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+}
+.my-swiper ul{
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+.my-swiper ul li{
+    width: 70px;
+}
+.tab-c{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.tab-c.active{
+    color: #0084ff;
+    border-bottom: solid 3px #0084ff;
+}
+.lottoin {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.lottoin-tit {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.lottoin-tit font {
+    color: #f00;
+}
+.lottoin-box ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .lottoin-box ul li span.lottoin-green {
+    background: url(../images/lotto-green.png) center center no-repeat;
+} */
+.lottoin-box ul li span {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    background-size: 100% 100%!important;
+}
+.lottoin-box ul li{
+    position: relative;
+}
+.lottoin-box ul li p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+.lottoin-box ul li:nth-child(6){
+    padding-right: 22px;
+}
+.lottoin-box ul li:nth-child(6)::after {
+    content: '+';
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -23px;
+    font-weight: 600;
+}
+.issue-wrap{
+    width: 100%;
+    height: 300px;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    padding: 10px 5px;
+    overflow: auto;
+}
+.issue-wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.issue-wrap ul li{
+    text-align: center;
+    width: 25%;
+    margin-bottom: 10px;
+}
+.issue-wrap ul li span{
+    background: #87b2e0;
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+    border-radius: 6px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 13px;
+}
+.issue-wrap ul li span.active{
+    background:#006de2;
+}
+.nygg {
+    padding: 10px 5px;
+    font-size: 14px;
+}
+.tkin-foot {
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    height: 50px;
+    margin: 0 auto;
+    border-top: solid 1px #eee;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.tkin-footl {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 10px;
+}
+.tkin-footl-pic {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.tkin-footl-pic img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.tkin-footl-input {
+    flex: 1;
+}
+.tkin-footl-input input {
+    width: 100%;
+    height: 32px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: solid 1px #ebebeb;
+    border-radius: 32px;
+    background: #f1f1f1;
+}
+.tkin-footr {
+    display: flex;
+    padding: 0 5px;
+}
+.tkin-footr li {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.tkin-footr li img {
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+}
+.tkin-footr li span {
+    width: 200px;
+    line-height: 1;
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+ /* 评论 */
+ .hot-pl-tit {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 0 10px;
+    border-bottom: solid 1px #eee;
+    /* color: #000; */
+}
+.hot-pl-chr, .hot-pl-detail, .hot-pl-mm {
+    color: #000;
+}
+.hot-pl-tit h2 {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: solid 4px #0084ff;
+}
+ .hot-pl-con {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+.hot-pl-pic1 {
+    width: 32px;
+    margin-right: 10px;
+    color: #999;
+    font-size: 13px;
+}
+.hot-pl-pic1 img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.hot-pl-pic1 span {
+    display: block;
+    line-height: 1.2;
+    text-align: center;
+}
+.hot-pl-per {
+    flex: 1;
+}
+.hot-pl-chr {
+    font-size: 17px;
+    font-weight: normal;
+    position: relative;
+}
+.hot-pl-time {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #999;
+}
+.hot-pl-timel {
+    flex: 1;
+}
+.hot-pl-timer img {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.hot-pl-detail {
+    line-height: 1.75;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 15;
+    overflow: hidden;
+    font-size: 16px;
+}
+.hot-pl-btn {
+    margin-top: 10px;
+}
+.hot-pl-btn span {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    padding: 0 15px;
+    border-radius: 30px;
+    background: #eee;
+}
+.hot-pl-btn span:last-child {
+    margin-right: 0;
+}
+.hot-pl-con font{
+    font-family: Arial,"微软雅黑";
+}
+.hot-pl-replay-box {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #f5f5f5;
+}
+.hot-pl-replay-tit {
+    margin-bottom: 5px;
+    color: #175199;
+    position: relative;
+}
+.hot-pl-replay-tit img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.hot-pl-replay-tit .hot-pl-chr2 {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+}
+.hot-pl-replay-con {
+    line-height: 1.75;
+    font-size: 16px;
+}
+.hot-pl-hf {
+    display: inline-block;
+}
+.hot-pl-pic3 {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.hot-pl-chr3 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #175199;
+}
+.hot-pl-mm {
+    display: inline;
+}
+.hot-pl-mm p {
+    display: inline;
+}
+
+.share-wrap{
+    width: 90%;
+    border-radius: 3px;
+    max-width: 400px;
+}
+.fenx {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.fenx .close {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    /* background: url(../images/close.png) center center no-repeat;
+    background-size: 100% 100%; */
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.fenx .tit {
+    border-bottom: solid 1px #eee;
+}
+.fenx .tit h3 {
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: solid 3px #0084ff;
+}
+.fenx .txt {
+    padding: 15px 0;
+    color: #999;
+}
+.fenx .web input {
+    width: 100%;
+    height: 40px;
+    padding: 0 6px;
+    box-sizing: border-box;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;
+    background: #f1f1f1;
+}
+.fenx .btn {
+    margin-top: 10px;
+}
+.fenx .btn button {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    background: #0084ff;
+    outline: none;
+}
+.no-comment{
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    padding-bottom: 60px;
+}
+.advert .img-wrap{
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.advert img{
+    width: 100%;
+}
+.hot-comment{
+    background: url(../img/sp.png) top right 60px no-repeat;
+    background-size: auto 55px;
+}

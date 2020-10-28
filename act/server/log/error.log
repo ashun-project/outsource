@@ -1,0 +1,229 @@
+2020-09-04T13:27:19.975Z error: 4日21:27 自动操作---抓取了一次数据做个记录====成功
+2020-09-04T13:35:01.630Z error: 4日21:35 自动操作---抓取了一次数据做个记录====成功
+2020-09-04T13:37:10.398Z error: 4日21:37 自动操作---抓取了一次数据做个记录====成功
+2020-09-04T13:39:10.686Z error: 4日21:39 自动操作---抓取了一次数据做个记录====成功
+2020-09-04T13:41:12.911Z error: 4日21:41 自动操作---抓取了一次数据做个记录====成功
+2020-09-04T13:34:08.663Z error: 4日21:34 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T05:27:27.834Z error: 5日13:27 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T05:46:31.694Z error: 5日13:46 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T05:46:32.681Z error: ER_BAD_FIELD_ERROR: Unknown column 'create_date' in 'order clause'
+2020-09-05T05:52:05.110Z error: 5日13:52 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T06:07:51.101Z error: 5日14:7 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T07:41:40.395Z error: 5日15:41 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T07:44:59.095Z error: 5日15:44 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T07:45:23.491Z error: 5日15:45 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:09:24.287Z error: 5日16:9 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:09:25.067Z error: ER_BAD_FIELD_ERROR: Unknown column 'create_date' in 'where clause'
+2020-09-05T08:11:13.204Z error: ER_BAD_FIELD_ERROR: Unknown column 'create_date' in 'where clause'
+2020-09-05T08:11:14.532Z error: 5日16:11 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:12:15.041Z error: 5日16:12 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:13:40.923Z error: 5日16:13 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:13:41.404Z error: ER_BAD_FIELD_ERROR: Unknown column 'create_date' in 'where clause'
+2020-09-05T08:15:40.742Z error: 5日16:15 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:24:25.653Z error: 5日16:24 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:27:43.111Z error: 5日16:27 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:45:54.523Z error: 5日16:45 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T08:53:05.064Z error: ER_BAD_FIELD_ERROR: Unknown column 'create_date' in 'where clause'
+2020-09-05T08:54:38.265Z error: 5日16:54 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T09:20:00.567Z error: 5日17:19 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T09:36:59.719Z error: 5日17:36 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T09:55:25.696Z error: 5日17:55 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T09:56:45.384Z error: 5日17:56 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T09:56:46.504Z error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id IN ([object Object])' at line 1
+2020-09-05T09:57:40.291Z error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id IN ([object Object])' at line 1
+2020-09-05T09:58:17.309Z error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id IN (1)' at line 1
+2020-09-05T09:58:55.354Z error: 5日17:58 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T09:59:44.474Z error: 5日17:59 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:08:35.238Z error: 5日18:8 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:21:57.549Z error: 5日18:21 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:24:26.147Z error: 5日18:24 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:26:37.933Z error: 5日18:26 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:28:26.598Z error: 5日18:28 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:29:16.560Z error: 5日18:29 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:31:27.928Z error: 5日18:31 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T10:32:01.854Z error: ER_BAD_FIELD_ERROR: Unknown column 'examineDate' in 'where clause'
+2020-09-05T10:33:50.300Z error: 5日18:33 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:01:22.254Z error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',)' at line 1
+2020-09-05T11:07:31.977Z error: 5日19:7 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:13:38.893Z error: 5日19:13 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:17:34.432Z error: 5日19:17 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:17:46.298Z error: 5日19:17 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:22:48.231Z error: 5日19:22 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:26:15.982Z error: 5日19:26 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:26:57.579Z error: 5日19:26 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:29:09.081Z error: 5日19:29 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:29:21.734Z error: 5日19:29 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:29:25.570Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.575Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.578Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.589Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.592Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.594Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.598Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.601Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.603Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.607Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.610Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.621Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.625Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.628Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.641Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.645Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.655Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.660Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.662Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.666Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.669Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.671Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.673Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.678Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.681Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.684Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.688Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.690Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.694Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.698Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.701Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.703Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.706Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.708Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.713Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.716Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.720Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.724Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.728Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.732Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.735Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.739Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.743Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.746Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.750Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.758Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.761Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.766Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.769Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:29:25.771Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:01.136Z error: 5日19:31 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T11:31:06.602Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.611Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.619Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.628Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.636Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.638Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.640Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.643Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.645Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.647Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.650Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.652Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.654Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.655Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.657Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.661Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.666Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.669Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.672Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.677Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.682Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.686Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.695Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.702Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.705Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.709Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.715Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.718Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.721Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.723Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.726Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.727Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.730Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.732Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.734Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.736Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.744Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.750Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.753Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.755Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.759Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.764Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.766Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.770Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.773Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.778Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.781Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.784Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.786Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:06.788Z error: 手动抓取图片失败Error: getaddrinfo ENOTFOUND mgtk2.suyuan1688.com mgtk2.suyuan1688.com:443
+2020-09-05T11:31:27.061Z error: 5日19:31 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T12:34:41.209Z error: 5日20:34 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T12:41:36.048Z error: 手动抓取图片失败Error: read ECONNRESET
+2020-09-05T12:42:24.685Z error: 手动抓取图片失败Error: read ECONNRESET
+2020-09-05T12:42:49.797Z error: 5日20:42 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T12:48:17.040Z error: https://mgtk2.suyuan1688.com/col/239/y152.jpg===下载图片失败:Error: connect ETIMEDOUT 104.247.194.118:443
+2020-09-05T13:01:30.881Z error: https://mgtk2.suyuan1688.com/col/null/amqlb.jpg===下载图片失败:null
+2020-09-05T13:25:16.308Z error: 5日21:25 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T13:25:38.512Z error: 5日21:25 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T13:26:51.032Z error: 5日21:26 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T13:27:05.604Z error: 5日21:27 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T13:31:24.804Z error: https://mgtk2.suyuan1688.com/col/null/amqlb.jpg===下载图片失败:null
+2020-09-05T13:35:04.143Z error: 5日21:35 自动操作---抓取了一次数据做个记录====成功
+2020-09-05T13:37:08.433Z error: 5日21:37 自动操作---抓取了一次数据做个记录====成功
+2020-09-06T05:46:40.478Z error: 6日13:46 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T04:30:33.834Z error: 7日12:30 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T04:45:21.499Z error: 7日12:45 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T04:56:42.260Z error: 7日12:56 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T05:01:02.066Z error: 7日13:0 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T05:06:05.418Z error: 7日13:6 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T05:06:50.966Z error: 手动抓取图片失败null
+2020-09-07T05:07:19.707Z error: 手动抓取图片失败null
+2020-09-07T05:18:40.272Z error: 7日13:18 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T13:34:14.259Z error: 7日21:34 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T13:33:59.359Z error: 7日21:33 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T13:35:04.985Z error: 7日21:35 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T13:34:54.117Z error: 7日21:34 自动操作---抓取了一次数据做个记录====成功
+2020-09-07T13:35:01.239Z error: 7日21:35 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T06:29:04.714Z error: 8日14:29 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:03:49.719Z error: 8日15:3 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:05:09.829Z error: 8日15:5 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:05:23.211Z error: 8日15:5 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:13:22.804Z error: 8日15:13 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:16:48.702Z error: 8日15:16 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:16:56.041Z error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+2020-09-08T07:17:28.000Z error: 8日15:17 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:18:00.649Z error: 8日15:18 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:19:03.123Z error: 8日15:18 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:40:44.356Z error: 8日15:40 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:41:32.178Z error: 8日15:41 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:44:38.654Z error: 8日15:44 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T07:56:47.541Z error: 8日15:56 自动操作---抓取了一次数据做个记录====成功
+2020-09-08T08:09:46.831Z error: 8日16:9 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T10:35:48.916Z error: 9日18:35 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T10:54:03.791Z error: 9日18:53 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T11:02:54.475Z error: 9日19:2 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T11:04:15.401Z error: 9日19:4 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T11:16:11.309Z error: 9日19:16 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T11:18:06.761Z error: 9日19:18 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T11:30:17.355Z error: 9日19:30 自动操作---抓取了一次数据做个记录====成功
+2020-09-09T11:34:44.189Z error: 9日19:34 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T07:18:52.457Z error: 12日15:18 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T09:28:57.586Z error: 12日17:28 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T11:00:56.282Z error: 12日19:0 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T11:10:48.342Z error: 12日19:10 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:35:03.628Z error: 12日21:35 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:37:08.305Z error: 12日21:37 自动操作---抓取了一次数据做个记录====失败
+2020-09-12T13:39:10.498Z error: 12日21:39 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:41:13.334Z error: 12日21:41 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:43:13.728Z error: 12日21:43 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:45:16.466Z error: 12日21:45 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:47:19.477Z error: 12日21:47 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:49:21.982Z error: 12日21:49 自动操作---抓取了一次数据做个记录====成功
+2020-09-12T13:51:24.824Z error: 12日21:51 自动操作---抓取了一次数据做个记录====成功
+2020-09-13T12:14:21.948Z error: 13日20:14 自动操作---抓取了一次数据做个记录====成功
+2020-09-13T12:22:56.401Z error: 13日20:22 自动操作---抓取了一次数据做个记录====成功
+2020-09-13T12:29:02.887Z error: 13日20:28 自动操作---抓取了一次数据做个记录====成功
+2020-09-13T14:18:40.883Z error: 13日22:18 自动操作---抓取了一次数据做个记录====成功
+2020-09-17T08:41:08.642Z error: 17日16:41 自动操作---抓取了一次数据做个记录====成功
+2020-09-17T09:31:41.640Z error: 17日17:31 自动操作---抓取了一次数据做个记录====成功
+2020-09-17T09:48:47.171Z error: 17日17:48 自动操作---抓取了一次数据做个记录====成功
+2020-09-17T09:49:40.336Z error: 17日17:49 自动操作---抓取了一次数据做个记录====成功
+2020-09-17T10:15:49.493Z error: 17日18:15 自动操作---抓取了一次数据做个记录====成功

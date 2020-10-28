@@ -1,0 +1,240 @@
+.home{
+    padding-top: 50px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+    width: 100%;
+    max-width: 750px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+header .logo{
+    height: 34px;
+    flex: 1;
+}
+header .logo img {
+    height: 100%;
+    width: auto;
+}
+header .search {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: solid 1px #ebebeb;
+    border-radius: 32px;
+    background: #f1f1f1;
+}
+header .search span {
+    display: inline-block;
+    min-width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    background: url(../img/serach.png) no-repeat;
+    background-size: 100% 100%;
+}
+header .search input {
+    width: 100%;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+}
+header .user {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.notice{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.notice-l{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.notice-r{
+    flex: 1;
+    height: 18px;
+}
+.nav {
+    padding: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li{
+    width: 25%;
+    font-size: 0.8rem;
+}
+.nav ul li img {
+    max-width: 50px;
+    width: 90%;
+    /* height: 50px; */
+    margin-bottom: 5px;
+}
+.nav ul li p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.kj-lotto {
+    padding: 8px 2%;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial,'微软雅黑';
+}
+.kj-lotto .kj-lotto-tit{
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    line-height: 36px;
+    color: #000;
+    font-size: 15px;
+}
+.kj-lotto .qs{
+    color: #ff0000;
+    padding-right: 5px;
+}
+.kj-lotto .kj-lotto-box ul {
+    display: flex;
+    justify-content: space-between;
+}
+.kj-lotto .kj-lotto-box ul li {
+    width: 13%;
+    padding: 6px 0;
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    background: linear-gradient(to top, #eee, #fff);
+}
+.kj-lotto .kj-lotto-box ul li:last-child {
+    margin-left: 10px;
+}
+.kj-lotto .kj-lotto-box ul li.last-green:last-child{
+    box-shadow: 0 0 10px rgba(0,128,0,0.58);
+    border-color: green;
+}
+.kj-lotto .kj-lotto-box ul li.last-red:last-child{
+    box-shadow: 0 0 10px rgba(255,0,0,0.58);
+    border-color: red;
+}
+.kj-lotto .kj-lotto-box ul li.last-blue:last-child{
+    box-shadow: 0 0 10px rgb(0, 160, 233);
+    border-color: #00a0e9;
+}
+.kj-lotto .kj-lotto-box ul li div {
+    width: 80%;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    margin: 0 auto 5px;
+}
+.kj-lotto .kj-lotto-box ul li div img{
+    float: left;
+}
+.kj-lotto .kj-lotto-box ul li div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.kj-lotto .kj-lotto-box ul li .zodiac{
+    font-size: 15px;
+}
+.kj-lotto .opening ul li div{
+    text-align: center;
+    display: block;
+    line-height: 60px;
+}
+.kj-lotto .kj-lotto-foot{
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.kj-lotto .kj-lotto-foot2{
+    color: #fff;
+    line-height: 25px;
+    height: 25px;
+    border-radius: 16px;
+    background: linear-gradient(to top, #c10000, #f00);
+    padding: 0 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.full ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.full .wrap{
+    width: 33.33%;
+    padding: 5px;
+}
+.full .wrap .box{
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+.full .wrap .box span{
+    display: block;
+    padding: 6px 0 10px;
+    font-weight: 600;
+}
+.loading-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.no-more{
+    text-align: center;
+    padding: 10px 0;
+    color: #c10000;
+}
+@media screen and (max-width: 450px) {
+    .kj-lotto {
+        font-size: 14px;
+    }
+    .kj-lotto .kj-lotto-tit, .kj-lotto .kj-lotto-box ul li .zodiac{
+        font-size: 12px;
+    }
+    .kj-lotto .kj-lotto-foot2{
+        font-size: 12px;
+        height: 22px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .full .wrap{
+        width: 50%;
+    }
+}
